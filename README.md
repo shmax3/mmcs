@@ -1,6 +1,6 @@
 # Overview
 
-This package provides some tools for working with specific mathematical models of control systems: simple motions, Dubins car. The package aims to calculate the following things:
+This package provides some tools for working with specific mathematical models of control systems: [simple motions](https://github.com/shmax3/mmcs/tree/main/mmcs/simple_motions), [Dubins car](https://github.com/shmax3/mmcs/tree/main/mmcs/dubins). The package aims to calculate the following things:
 1. The minimum time to reach a given state and the corresponding trajectory.
 2. The minimum time to reach a prescribed time-varying state and the corresponding trajectory.
 3. The reachable set and its boundary at a given time moment.
