@@ -11,7 +11,6 @@ This package provides some tools for working with specific mathematical models o
 
 You can install the latest version from GitHub:
 ```bash
-$ pip install numpy numba
 $ pip install "git+https://github.com/shmax3/mmcs.git"
 ```
 
