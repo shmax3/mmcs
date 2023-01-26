@@ -16,7 +16,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/shmax3/mmcs",
     packages=setuptools.find_packages(),
-    install_requires=['numba', 'numpy'],
+    install_requires=['numba', 'scipy', 'numpy'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
