@@ -34,7 +34,7 @@ def admissible_path_to_point(t, x, y, n=100):
         return (t, s*where(t < tau, cos(t) - 1, xCSm(tau, t)),
                 where(t < tau, sin(t),  yCS(tau, t)),
                 where(t < tau, pi/2 + s*t, pi/2 + s*tau))
-    elif (DI(x, y) or DIII(x, y)) and isclose(t[-1], VCCp(x, y)):
+    elif DIII(x, y) and isclose(t[-1], VCCp(x, y)):
         tau = thetaCCp(x, y)
         s = sign(x) if x != 0 else 1.0
         return (t, s*where(t < tau, cos(t) - 1,  xCCp(tau, t)),

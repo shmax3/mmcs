@@ -26,7 +26,7 @@ def admissible_control_to_point(t, x, y, n=100):
         tau = thetaCS(x, y)
         s = -sign(x) if x != 0 else float(y < 0)
         return t, where(t <= tau, s, 0.0)
-    elif (DI(x, y) or DIII(x, y)) and isclose(t[-1], VCCp(x, y)):
+    elif DIII(x, y) and isclose(t[-1], VCCp(x, y)):
         tau = thetaCCp(x, y)
         s = sign(x) if x != 0 else 1.0
         return t, where(t <= tau, s, -s)
